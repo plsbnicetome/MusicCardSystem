@@ -82,38 +82,25 @@ public class MusicHandler : MonoBehaviour
                 Song iSong = new Song();
                 iSong.clip = musicClips[i];
 
-                //THERE MUST BE A BETTER WAY
+                //USE THIS ONLY IF YOU WANT TO SET UP THE SONG LIST IN CODE! OTHERWISE  USE THE INSPECTOR
                 if (i == 0)
                 {
-                    iSong.artistName = "Frankum";
-                    iSong.songName = "Electro Bass";
+                    iSong.artistName = "musicClips[0] artist name";
+                    iSong.songName = "musicClips[0] song name";
+                    iSong.albumArt = null;
                 }
                 if (i == 1)
                 {
-                    iSong.artistName = "Georgke";
-                    iSong.songName = "Sunday Acid Jam";
+                    
                 }
                 if (i == 2)
                 {
-                    iSong.artistName = "Doctor Dreamchip";
-                    iSong.songName = "2018-09-05";
+                    
                 }
                 if (i == 3)
                 {
-                    iSong.artistName = "Doctor Dreamchip";
-                    iSong.songName = "Arturia Acid";
+                    //ect..
                 }
-                if (i == 4)
-                {
-                    iSong.artistName = "carnotaurusteam";
-                    iSong.songName = "9 Soundtrack";
-                }
-                if (i == 5)
-                {
-                    iSong.artistName = "Badoink";
-                    iSong.songName = "Fire It Up";
-                }
-
 
                 songs[i] = iSong;
             }
